@@ -1,0 +1,169 @@
+{
+  "actor": [
+    {
+      "id": 1014111,
+      "name": {
+        "en": "Hesham Maged",
+        "ar": "هشام ماجد"
+      },
+      "photos": [
+        "Hesham_Maged.jpg",
+        "Hesham_Maged_2.jpg",
+        "Hesham_Maged_3.jpg",
+        "Hesham_Maged_4.jpg"
+      ],
+      "info": "https://elcinema.com/person/1014111",
+      "desc": ""
+    },
+    {
+      "id": 1977444,
+      "name": {
+        "en": "Ahmed Fahmy",
+        "ar": "أحمد فهمي"
+      },
+      "photos": [
+        "Ahmed_Fahmy.jpg",
+        "Ahmed_Fahmy_2.jpg",
+        "Ahmed_Fahmy_3.jpg",
+        "Ahmed_Fahmy_4.jpg"
+      ],
+      "info": "https://elcinema.com/person/1977444",
+      "desc": ""
+    },
+    {
+      "id": 1100133,
+      "name": {
+        "en": "Shiko",
+        "ar": "شيكو"
+      },
+      "photos": [
+        "Shiko.jpg",
+        "Shiko_2.jpg",
+        "Shiko_3.jpg"
+      ],
+      "info": "https://elcinema.com/person/1100133",
+      "desc": ""
+    },
+    {
+      "id": 1107812,
+      "name": {
+        "en": "Ahmed Fathy",
+        "ar": "أحمد فتحي"
+      },
+      "photos": [
+        "Ahmed_Fathy.jpg",
+        "Ahmed_Fathy_2.jpg",
+        "Ahmed_Fathy_3.jpg"
+      ],
+      "info": "https://elcinema.com/person/1107812",
+      "desc": ""
+    },
+    {
+      "id": 1980725,
+      "name": {
+        "en": "Mohamed Tharwat",
+        "ar": "محمد ثروت"
+      },
+      "photos": [
+        "Mohamed_Tharwat.jpg",
+        "Mohamed_Tharwat_2.jpg",
+        "Mohamed_Tharwat_3.jpg",
+        "Mohamed_Tharwat_4.jpg"
+      ],
+      "info": "https://elcinema.com/person/1107812",
+      "desc": ""
+    },
+    {
+      "id": 1024671,
+      "name": {
+        "en": "Ahmed El Sakka",
+        "ar": "أحمد السقا"
+      },
+      "photos": [
+        "elsakka.jpg",
+        "elsakka_2.jpg",
+        "elsakka_3.jpg",
+        "elsakka_4.jpg"
+      ],
+      "info": "https://elcinema.com/person/1024671",
+      "desc": ""
+    },
+    {
+      "id": 2074126,
+      "name": {
+        "en": "Outaka",
+        "ar": "أوتاكا"
+      },
+      "photos": [
+        "outaka.jpg",
+        "outaka_2.jpg",
+        "outaka_3.jpg",
+        "outaka_4.jpg"
+      ],
+      "info": "https://elcinema.com/person/2074126",
+      "desc": ""
+    },
+    {
+      "id": 1015057,
+      "name": {
+        "en": "Mai Kassab",
+        "ar": "مي كساب"
+      },
+      "photos": [
+        "Mai_Kassab.jpg",
+        "Mai_Kassab.jpg",
+        "Mai_Kassab.jpg",
+        "Mai_Kassab.jpg"
+      ],
+      "info": "https://elcinema.com/person/1015057",
+      "desc": ""
+    },
+    {
+      "id": 2089293,
+      "name": {
+        "en": "Merna Gamel",
+        "ar": "ميرنا جميل"
+      },
+      "photos": [
+        "Merna_Gamel.jpg",
+        "Merna_Gamel_2.jpg",
+        "Merna_Gamel_3.jpg",
+        "Merna_Gamel_4.jpg"
+      ],
+      "info": "https://elcinema.com/person/2089293",
+      "desc": ""
+    },
+    {
+      "id": 1090208,
+      "name": {
+        "en": "Sami Maghawri",
+        "ar": "سامي مغاوري"
+      },
+      "photos": [
+        "maghwri.jpg",
+        "maghwri_2.jpg",
+        "maghwri_3.jpg",
+        "maghwri_4.jpg",
+        "maghwri_5.jpg",
+        "maghwri_6.jpg"
+      ],
+      "info": "https://elcinema.com/person/1090208",
+      "desc": ""
+    },
+    {
+      "id": 1992894,
+      "name": {
+        "en": "Arfa Abdelrasoul",
+        "ar": "عارفة عبد الرسول"
+      },
+      "photos": [
+        "3arfa.jpg",
+        "3arfa_2.jpg",
+        "3arfa_3.jpg",
+        "3arfa_4.jpg"
+      ],
+      "info": "https://elcinema.com/person/1992894",
+      "desc": ""
+    }
+  ]
+}
