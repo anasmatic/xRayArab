@@ -9,37 +9,11 @@ import face_recognition
 import pandas as pd
 import numpy as np
 import threading
-import tkinter
-import json
-import mss
 import cv2
+from vertical_layout import HorizontalImageBar
 
 #fullscreen ui
-root = tkinter.Tk()
 
-def end_fullscreen(self, event=None):
-        global root
-        root.state = False
-        root.attributes("-fullscreen", False)
-        print("escape")
-        return "break"
-    
-root.title('XRay Arab')
-#root.geometry("1000x1000")
-screenwidth = root.winfo_screenwidth()
-screenheight = root.winfo_screenheight()
-root.geometry("{0}x{1}+0+0".format(
-            screenwidth, screenheight))
-root.state = False
-root.attributes("-fullscreen", True)
-root.wm_attributes("-transparentcolor", root["bg"])
-root.bind("<Escape>", end_fullscreen)
-#end
-
-box = {'top': 0, 'left': 0, 'width': screenwidth, 'height': screenheight}
-
-db = []
-first_image_list = []
 def loaddb():
     global db
     db = pd.read_json(r"../db/actors.json");
@@ -54,19 +28,12 @@ def loaddb():
 def scan():
     print("scan")
     #threading.Timer(5, scan).start()
-
-    img = ImageGrab.grab(bbox=(0, 0, screenwidth, screenheight)) #x, y, w, h
-    #take screen shot
-    #with mss.mss() as sct:
-    #    frame = np.array(sct.grab(box))
-    #frame = np.array(frame)
-    
-    # Convert the image from BGR color (which OpenCV uses) to RGB color (which face_recognition uses)
-    #rgb_frame = frame[:, :, ::-1]
+    global bar
+    img = ImageGrab.grab(bbox=(0, 0, bar.screenwidth, bar.screenheight)) #x, y, w, h
     
     img_np = np.array(img)
     frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2RGB)
-    cv2.imshow("frame", frame)
+    #cv2.imshow("frame", frame)
     
     allunkownfaces = face_recognition.face_encodings(frame)
     print("found : ",len(allunkownfaces), " faces")
@@ -84,7 +51,7 @@ def scan():
             print("====================================")
             print("name :", actorObj['name']['ar'])
             print("====================================")
-    
+"""    
 picture_of_me = face_recognition.load_image_file("../Known/Hesham Maged.jpg")
 my_face_encoding = face_recognition.face_encodings(picture_of_me)[0]
 
@@ -104,14 +71,22 @@ if results1[0] == True:
     print("It's a picture of me!")
 else:
     print("It's not a picture of me!")
-"""    
+    
 if results2[0] == True:
     print("It's a picture of me!")
 else:
     print("It's not a picture of me!")
 """
+
+
+db = []
+first_image_list = []
+
 loaddb()
+print("db ready")
+bar = HorizontalImageBar()
+print("Ui ready")
 #scan()
 threading.Timer(5, scan).start()
-root.mainloop()
+bar.root.mainloop()
 
