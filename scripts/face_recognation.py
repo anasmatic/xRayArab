@@ -27,7 +27,7 @@ def loaddb():
 #face detection logic
 def scan():
     print("scan")
-    #threading.Timer(5, scan).start()
+    threading.Timer(2, scan).start()
     global bar
     img = ImageGrab.grab(bbox=(0, 0, bar.screenwidth, bar.screenheight)) #x, y, w, h
     
@@ -38,7 +38,7 @@ def scan():
     allunkownfaces = face_recognition.face_encodings(frame)
     print("found : ",len(allunkownfaces), " faces")
     print("compairing against : ",len(first_image_list), " faces")
-    
+    foundObjs = []
     for unknownface in allunkownfaces:
         results = face_recognition.compare_faces(first_image_list, unknownface)
         print("results: ",results)
@@ -51,6 +51,9 @@ def scan():
             print("====================================")
             print("name :", actorObj['name']['ar'])
             print("====================================")
+            foundObjs.append(actorObj)
+            
+    bar.update_items(foundObjs)
 """    
 picture_of_me = face_recognition.load_image_file("../Known/Hesham Maged.jpg")
 my_face_encoding = face_recognition.face_encodings(picture_of_me)[0]
@@ -86,7 +89,7 @@ loaddb()
 print("db ready")
 bar = HorizontalImageBar()
 print("Ui ready")
-#scan()
-threading.Timer(5, scan).start()
+scan()
+#threading.Timer(5, scan).start()
 bar.root.mainloop()
 
